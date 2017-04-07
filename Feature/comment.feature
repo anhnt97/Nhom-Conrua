@@ -1,7 +1,7 @@
 	Feature: Comment
-    In order to discuss with other users
-	As a "Rùa đi học" user
-	I need to be able to post comments
+    		In order to discuss with other users
+		As a "Rùa đi học" user
+		I need to be able to post comments
 	
 	Scenario: post valid comments
 		Given I am on "Công suất điện xoay chiều - Video" page
