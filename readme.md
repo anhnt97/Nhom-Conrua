@@ -14,6 +14,7 @@ Rùa đi học là website giúp các bạn học sinh ôn thi vào đại học
 # Ngôn ngữ sử dụng,frame work
 - html,css, API , SDK facebook
 - bootstrap
+- AngularJS
 # Sơ đồ ca sử dụng
 ![usecase](http://sv1.upsieutoc.com/2017/04/08/user_case.jpg)
 # Tính năng đang phát triển
