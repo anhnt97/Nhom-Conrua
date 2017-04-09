@@ -131,10 +131,10 @@
 			}
 
 		// show score as "score/possible score"
-			var showScore = "Điểm: " + calcScore +"/" + questionCounter;
+			var showScore = "Đúng: " + calcScore +"/" + questionCounter;
 		// if 4/4, "perfect score!"
 			if (calcScore === questionCounter) {
-				showScore = showScore + "&nbsp; <strong>Perfect Score!</strong>"
+				showScore = showScore
 			};
 			document.getElementById('userScore').innerHTML = showScore;
 		}
@@ -212,7 +212,7 @@
 		<br>
 				<div class="row">
 					<div class="col-md-10 col-xs-10">
-						<marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2">Tin tức : Tuyển sinh đại học năm 2017 Đại học Công Nghệ</marquee>
+						<marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2"><a href="2.html">Bài thi đang diễn ra: Kiểm tra chương I (30p)</a></marquee>
 					</div>
 				</div>
 		
@@ -220,58 +220,19 @@
 		<div class="col-md-8 col-xs-12">
 			  <h2 class="quizHeader">Bài kiểm tra chương 1</h2>
 			  <ol>
-				<li>
-					
-						<p class="question">Một chất điểm thực hiện dao động điều hòa với chu kì T = 3,14s và biên độ A = 1m. Tại thời điểm chất điểm đi qua vị trí cân bằng thì vận tốc của nó có độ lớn bằng:</p>
-
-						<ul>
-						<label id="correctString1"><input class="answer" type="radio" name="q1" value="1">0.5m/s</label><br>
-						<label><input class="answer" type="radio" name="q1" value="0">1m/s</label><br>
-						<label><input class="answer" type="radio" name="q1" value="0">2m/s</label><br>
-						<label><input class="answer" type="radio" name="q1" value="0">3m/s</label>
-						</ul>
-					
-				</li>
-				<li>
-						<p class="question">Một vật dao động điều hoà khi vật có li độ x1 = 3cm thì vận tốc của nó là v1 = 40cm/s, khi vật qua vị trí cân bằng vật có vận tốc v2 = 50cm. Li độ của vật khi có vận tốc v3 = 30cm/s là:</p>
-
-						<ul>
-						<label><input class="answer" type="radio" name="q2" value="0">4cm</label><br>
-						<label id="correctString2"><input class="answer" type="radio" name="q2" value="1">4mm</label><br>
-						<label><input class="answer" type="radio" name="q2" value="0">16cm</label><br>
-						<label><input class="answer" type="radio" name="q2" value="0">2cm</label>
-						</ul>
-				</li>
+				
 				<li>
 						<p class="question">Một vật dao động điều hoà, trong thời gian 1 phút vật thực hiện được 30 dao động. Chu kì dao động của vật là:</p>
 
 						<ul>
 						<label><input class="answer" type="radio" name="q3" value="0">2s</label><br>
-						<label id="correctString3"><input class="answer" type="radio" name="q3" value="1">30s</label><br>
-						<label><input class="answer" type="radio" name="q3" value="0">0.5s</label><br>
+						<label><input class="answer" type="radio" name="q3" value="0">30s</label><br>
+						<label id="correctString3"><input class="answer" type="radio" name="q3" value="1">0.5s</label><br>
 						<label><input class="answer" type="radio" name="q3" value="0">1s</label>
 						</ul>
 				</li>
-				<li>
-						<p class="question">Một vật dao động điều hoà có phương trình dao động là x = 5cos(2πt + π/3) (cm). Vận tốc của vật khi có li độ x = 3cm là:</p>
-						
-						<ul>
-						<label><input class="answer" type="radio" name="q4" value="0">25,12cm/s</label><br>
-						<label id="correctString4"><input class="answer" type="radio" name="q4" value="1">25,12m/s</label><br>
-						<label><input class="answer" type="radio" name="q4" value="0">12,56cm/s</label><br>
-						<label><input class="answer" type="radio" name="q4" value="0">12,56m/s</label>
-						</ul>
-				</li>
-				<li>
-						<p class="question">Một vật dao động điều hoà có phương trình dao động là x = 5cos(2πt + π/3) (cm). Vận tốc của vật khi có li độ x = 3cm là:</p>
-						
-						<ul>
-						<label><input class="answer" type="radio" name="q5" value="0">25,12cm/s</label><br>
-						<label id="correctString5"><input class="answer" type="radio" name="q5" value="1">25,12m/s</label><br>
-						<label><input class="answer" type="radio" name="q5" value="0">12,56cm/s</label><br>
-						<label><input class="answer" type="radio" name="q5" value="0">12,56m/s</label>
-						</ul>
-				</li>
+				
+				
 			</ol>
 			<br/>
 			<div class="submitter">
