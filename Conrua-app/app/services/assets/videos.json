@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1", 
+        "name": "Giao thoa sóng", 
+        "srcimg": "http://imageshack.com/a/img924/51/mIOl8L.jpg", 
+        "src": "https://www.youtube.com/embed/q1OZwXig2bA", 
+        "teacher": "Dương Truyền Nhân"
+        },
+    {
+        "id": "2", 
+        "name": "Công suất điện xoay chiều", 
+        "srcimg": "http://imageshack.com/a/img921/8623/DnaKid.png", 
+        "src": "https://www.youtube.com/embed/UT4EdC1i49A", 
+        "teacher": "Lại Đắc Hợp"
+    },
+    {
+        "id": "3", 
+        "name": "Lượng tử ánh sáng", 
+        "srcimg": "http://imageshack.com/a/img922/9601/02sLck.jpg", 
+        "src": "https://www.youtube.com/embed/n5m-RF2Z0kQ", 
+        "teacher": "Nguyễn Thành Nam"
+    }
+]

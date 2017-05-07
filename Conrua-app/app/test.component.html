@@ -1,0 +1,82 @@
+<!--<script>
+var submitQuiz = (function() {
+    console.log('submitted');
+
+    // get each answer score
+    function answerScore(qName) {
+        var radiosNo = document.getElementsByName(qName);
+
+        for (var i = 0, length = radiosNo.length; i < length; i++) {
+            if (radiosNo[i].checked) {
+                // do something with radiosNo
+                var answerValue = Number(radiosNo[i].value);
+            }
+        }
+        // change NaNs to zero
+        if (isNaN(answerValue)) {
+            answerValue = 0;
+        }
+        return answerValue;
+    }
+
+    // calc score with answerScore function
+    var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4') + answerScore('q5'));
+    console.log("CalcScore: " + calcScore); // it works!
+
+
+
+    // calculate "possible score" integer
+    var questionCountArray = document.getElementsByClassName('question');
+
+    var questionCounter = 0;
+    for (var i = 0, length = questionCountArray.length; i < length; i++) {
+        questionCounter++;
+    }
+
+    // show score as "score/possible score"
+    var showScore = "Đúng: " + calcScore + "/" + questionCounter;
+    //document.write(showScore);
+    document.getElementById('userScore').innerHTML = showScore;
+}
+)
+
+$(document).ready(function () {
+
+    $('#submitButton').click(function () {
+        $(this).addClass('hide');
+    });
+
+})
+
+</script>
+-->
+<script src="mark.js"></script>
+<div class="col-md-8 col-xs-12">
+    <h2 class="quizHeader">Bài kiểm tra chương 1</h2>
+    <ol>
+
+        <li>
+            <p class="question">Một vật dao động điều hoà, trong thời gian 1 phút vật thực hiện được 30 dao động. Chu kì dao động của vật là:</p>
+
+            <ul>
+                <label><input class="answer" type="radio" name="q3" value="0">2s</label><br>
+                <label><input class="answer" type="radio" name="q3" value="0">30s</label><br>
+                <label id="correctString3"><input class="answer" type="radio" name="q3" value="1">0.5s</label><br>
+                <label><input class="answer" type="radio" name="q3" value="0">1s</label>
+            </ul>
+        </li>
+
+
+    </ol>
+    <br/>
+    <div class="submitter">
+        <input class="quizSubmit btn btn-success" id="submitButton" onClick="submitQuiz()" type="submit" value="Nộp bài" />
+    </div>
+
+    <!--show score upon submit-->
+    <div>
+        <h2 class="quizScore" id="userScore"></h2>
+    </div>
+
+
+</div>
